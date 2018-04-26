@@ -51,7 +51,7 @@ internal enum Localization: String {
     func localizedStringWithComment(_ comment: String?) -> String {
         return NSLocalizedString(self.rawValue,
                                  tableName: Localization.StringsFileName.rawValue,
-                                 bundle: Bundle(for: CardTextField.self),
+                                 bundle: Bundle.resourcesBundle,
                                  comment: comment ?? "")
     }
 }
